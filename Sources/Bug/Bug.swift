@@ -12,20 +12,8 @@ public extension A where Self == C {
     }
 }
 
-public extension A where Self == D {
-    static func d() -> some A {
-        D()
-    }
-}
-
 public struct C: A {
     public func build() -> some View {
-        EmptyView()
-    }
-}
-
-public struct D: A {
-    public func build() -> some View {
-        Text("Test")
+        Text("Hello")
     }
 }
